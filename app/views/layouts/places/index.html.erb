@@ -1,0 +1,8 @@
+<h1>My Travel Log</h1>
+<a href="/places/new">Add a new place</a>
+
+<ul>
+  <% @places.each do |place| %>
+    <li><a href="/places/<%= place.id %>"><%= place.name %></a></li>
+  <% end %>
+</ul>
